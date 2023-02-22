@@ -2,7 +2,6 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
-
 import entities.Rectangle;
 
 public class Program {
@@ -18,9 +17,9 @@ public class Program {
 		double h = sc.nextDouble();
 		rectangle.height = h;
 		
-		System.out.println("AREA: " + rectangle.area(w, h));
-		System.out.println(" PERIMETER: " + rectangle.perimeter(w, h));
-		System.out.println(" DIAGONAL: " + rectangle.diagonal(w, h));
+		System.out.printf("AREA = %.2f%n", rectangle.area(w, h));
+		System.out.printf(" PERIMETER = %.2f%n", rectangle.perimeter(w, h));
+		System.out.printf(" DIAGONAL = %.2f%n", rectangle.diagonal(w, h));
 		sc.close();
 
 	}
